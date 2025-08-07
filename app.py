@@ -6,7 +6,7 @@ st.set_page_config(page_title="이미지 + 텍스트 결합기", layout="centere
 st.title("🖼️ 이미지 + 텍스트 결합기")
 
 st.markdown("""
-1. 이미지를 업로드하거나 클릭 후 `Ctrl+V`로 붙여넣으세요.  
+1. 이미지를 업로드 해주세요.  
 2. 텍스트 입력 후 `Ctrl + Enter` 를 누르면 이미지가 생성됩니다.
 """)
 
@@ -98,3 +98,4 @@ if uploaded_image and input_text and file_name:
     st.download_button("📥 이미지 다운로드", data=img_buffer, file_name=safe_file_name, mime="image/png")
 else:
     st.info("이미지, 텍스트, 파일명을 모두 입력하세요.")
+
